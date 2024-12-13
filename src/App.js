@@ -1,13 +1,13 @@
 import './App.css';
 
 // shared tailwindcss styles for all the navigation items except for get start and svg icons
-const navItemStyling = "relative after:content-[''] hover:after:scale-100 hover:after:bg-gray-400 after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 hover:text-gray-700 cursor-pointer font-medium text-sm text-gray-500 pt-1 px-1 pb-2";
+const navItemStyling = "relative after:content-[''] hover:after:scale-100 hover:after:bg-gray-300 after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 hover:text-gray-700 cursor-pointer font-medium text-sm text-gray-500 pt-2 px-1 pb-2";
 
 function App() {
   return (
-    <div className="flex justify-center">
-      <header>
-        <nav className="flex px-8 py-2 items-center space-x-96">
+    <div>
+      <header className='flex flex-col justify-center'>
+        <nav className="flex px-8 py-2 mb-2 justify-center items-center space-x-96">
           {/* svg of the odan project logo />*/}
           <svg class="cursor-pointer hidden lg:block h-12 w-auto text-gray-800 dark:text-gray-300" xmlns="http://www.w3.org/2000/svg" width="205" height="59" viewBox="0 0 205 59" fill="none" role="img" aria-labelledby="aimo4pd0sljq7lim19ykocean6u5hy8c" ><title id="aimo4pd0sljq7lim19ykocean6u5hy8c">Odin Logo</title>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.68945 34.7331L13.1482 19.2902H30.9833L35.442 34.7331H8.68945Z" fill="#EED9C3"></path>
@@ -39,14 +39,14 @@ function App() {
             <li className="cursor-pointer hover:bg-teal-800 font-medium text-sm ml-8 bg-teal-700 px-4 py-2 rounded-md text-white">Get Started</li>
           </ul>
         </nav>
+        <section className="flex flex-col text-center justify-center mx-4 mt-24 pb-4 px-8">
+          <h1 className='text-6xl font-medium text-gray-700 pb-6 tracking-tighter mx-auto'>Your <span className='text-yellow-700 '>Career in Web Development</span> <span className='block'>Starts Here</span></h1>
+          <p className='text-gray-500 text-xl mx-auto mb-10 max-w-xl'>Our full stack curriculum is free and supported by a <span className='block'>passionate open source community.</span></p>
+          <button className='py-3 px-6 border border-slate-300 rounded-md w-fit self-center'>View Full Curriculum</button>
+        </section>
+        <img className="object-cover" src="/home-isometric.svg" alt="home isometric"/>
       </header>
       <main>
-        {/*<section>
-          <h1>Your Career in Web Development Starts Here</h1>
-          <p>Our full stack curriculum is free and supported by a passionate open source community.</p>
-          <div>View Full Curriculum</div>
-        </section>
-        */}
       </main>
       <footer>
       </footer>
