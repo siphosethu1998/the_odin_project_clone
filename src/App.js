@@ -1,7 +1,27 @@
 import './App.css';
+import StepCard from './Components/StepCard';
 
 // shared tailwindcss styles for all the navigation items except for get start and svg icons
 const navItemStyling = "relative after:content-[''] hover:after:scale-100 hover:after:bg-gray-300 after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 hover:text-gray-700 cursor-pointer font-medium text-sm text-gray-500 pt-2 px-1 pb-2";
+
+// array to store step objects
+const stepArrayObjects = [
+  {
+    image: "https://www.theodinproject.com/assets/img-learn-0a725ad1.svg",
+    title: "Learn",
+    description: "Learn from a curriculum with the best curated online tutorials, blogs, and courses."
+  },
+  {
+    image: "https://www.theodinproject.com/assets/img-build-a02a424b.svg",
+    title: "Build",
+    description: "Build dozens of portfolio-worthy projects along the way, from simple scripts to full programs and deployed websites."
+  },
+  {
+    image: "https://www.theodinproject.com/assets/img-connect-866e9700.svg",
+    title: "Connect",
+    description: "You're not alone. Learn and get help from our friendly community of beginner and experienced developers."
+  }
+];
 
 function App() {
   return (
@@ -39,6 +59,7 @@ function App() {
             <li className="cursor-pointer hover:bg-teal-800 font-medium text-sm ml-8 bg-teal-700 px-4 py-2 rounded-md text-white">Get Started</li>
           </ul>
         </nav>
+        {/* Welcoming section */}
         <section className="flex flex-col text-center justify-center mx-4 mt-24 pb-4 px-8">
           <h1 className='text-6xl font-medium text-gray-700 pb-6 tracking-tighter mx-auto'>Your <span className='text-yellow-700 '>Career in Web Development</span> <span className='block'>Starts Here</span></h1>
           <p className='text-gray-500 text-xl mx-auto mb-10 max-w-xl'>Our full stack curriculum is free and supported by a <span className='block'>passionate open source community.</span></p>
@@ -47,6 +68,20 @@ function App() {
         <img className="object-cover" src="/home-isometric.svg" alt="home isometric"/>
       </header>
       <main>
+        {/* How it works section */}
+        <section className='flex flex-col w-1/2 px-8 py-20 mx-auto text-center'>
+          <h2 className='text-3xl font-medium mb-5 text-gray-800'>How it works</h2>
+          <p className='text-lg text-gray-500 w-3/4 text-center mx-auto mb-10'>This is the website we wish we had when we were learning on our own. We scour the internet looking for only the best resources to supplement your learning and present them in a logical order.</p>
+          <div className='flex'>
+            <StepCard step={stepArrayObjects[0]}/>
+            <StepCard step={stepArrayObjects[1]}/>
+            <StepCard step={stepArrayObjects[2]}/>
+          </div>
+        </section>
+        {/* learning technologies section */}
+        <section></section>
+        {/* success stories and support us section */}
+        <section></section>
       </main>
       <footer>
       </footer>
