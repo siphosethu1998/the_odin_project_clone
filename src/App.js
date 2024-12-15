@@ -1,5 +1,7 @@
 import './App.css';
 import StepCard from './Components/StepCard';
+import TechnologyCard from './Components/TechnologyCard';
+import UserSuccessStory from './Components/UserSuccessStory';
 
 // shared tailwindcss styles for all the navigation items except for get start and svg icons
 const navItemStyling = "relative after:content-[''] hover:after:scale-100 hover:after:bg-gray-300 after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 hover:text-gray-700 cursor-pointer font-medium text-sm text-gray-500 pt-2 px-1 pb-2";
@@ -23,12 +25,76 @@ const stepArrayObjects = [
   }
 ];
 
+// array to store technology objects
+const technologyArrayObjects = [
+  {
+    image: "https://www.theodinproject.com/assets/badge-html-css-4d74ba92.svg",
+    title: "Intermediate HTML and CSS",
+  },
+  {
+    image: "https://www.theodinproject.com/assets/badge-html-css-4d74ba92.svg",
+    title: "Advanced HTML and CSS",
+  },
+  {
+    image: "https://www.theodinproject.com/assets/badge-database-3757c431.svg",
+    title: "Databases",
+  },
+  {
+    image: "https://www.theodinproject.com/assets/badge-javascript-43bfdf7b.svg",
+    title: "JavaScript",
+  },
+  {
+    image: "https://www.theodinproject.com/assets/badge-react-21ede6f9.svg",
+    title: "React",
+  },
+  {
+    image: "https://www.theodinproject.com/assets/badge-nodejs-b8154f54.svg",
+    title: "NodeJS",
+  },
+  {
+    image: "https://www.theodinproject.com/assets/badge-ruby-on-rails-e5f98949.svg",
+    title: "Ruby on Rails",
+  },
+  {
+    image: "https://www.theodinproject.com/assets/badge-ruby-2e00add1.svg",
+    title: "Ruby",
+  },
+  {
+    image: "https://www.theodinproject.com/assets/badge-getting-hired-87e39081.svg",
+    title: "Get Hired",
+  }
+];
+
+// array to store user success story objects
+const userArrayObjects = [
+  {
+    image: "https://www.theodinproject.com/assets/success_stories/rob_pando-2afd55e8.jpg",
+    name: "Rob Pando",
+    paragraph: "TOP was a perfect match for my learning style. Not walking me through an entire project but actually forcing me to figure it out on my own, by pointing me..."
+  },
+  {
+    image: "https://www.theodinproject.com/assets/success_stories/cody_loyd-fb0721ea.jpg",
+    name: "Cody Loyd",
+    paragraph: "Before I started the Odin Project I had literally ZERO programming experience. After almost exactly a year of working through the program, I was offered a job as a front..."
+  },
+  {
+    image: "https://www.theodinproject.com/assets/success_stories/andrej_dragojevic-a1bd5d98.jpg",
+    name: "Andrej Dragojevic",
+    paragraph: "An incredible self-paced curriculum that consists of the best resources for learning programming on the web! It was an invaluable resource on my path to a becoming a software developer...."
+  },
+  {
+    image: "https://www.theodinproject.com/assets/success_stories/skip-7f368b69.jpg",
+    name: "Skip Gibson",
+    paragraph: "Before I found The Odin Project I had very little direction with my learning, jumping from topic to topic then trying to piece things together as I went. Having this..."
+  }
+];
+
 function App() {
   return (
     <div>
       <header className='flex flex-col justify-center'>
         <nav className="flex px-8 py-2 mb-2 justify-center items-center space-x-96">
-          {/* svg of the odan project logo />*/}
+          {/* svg of the odin project logo />*/}
           <svg class="cursor-pointer hidden lg:block h-12 w-auto text-gray-800 dark:text-gray-300" xmlns="http://www.w3.org/2000/svg" width="205" height="59" viewBox="0 0 205 59" fill="none" role="img" aria-labelledby="aimo4pd0sljq7lim19ykocean6u5hy8c" ><title id="aimo4pd0sljq7lim19ykocean6u5hy8c">Odin Logo</title>
             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.68945 34.7331L13.1482 19.2902H30.9833L35.442 34.7331H8.68945Z" fill="#EED9C3"></path>
             <ellipse cx="27.7849" cy="27.1223" rx="1.26005" ry="1.24284" fill="#353535"></ellipse>
@@ -63,27 +129,66 @@ function App() {
         <section className="flex flex-col text-center justify-center mx-4 mt-24 pb-4 px-8">
           <h1 className='text-6xl font-medium text-gray-700 pb-6 tracking-tighter mx-auto'>Your <span className='text-yellow-700 '>Career in Web Development</span> <span className='block'>Starts Here</span></h1>
           <p className='text-gray-500 text-xl mx-auto mb-10 max-w-xl'>Our full stack curriculum is free and supported by a <span className='block'>passionate open source community.</span></p>
-          <button className='py-3 px-6 border border-slate-300 rounded-md w-fit self-center'>View Full Curriculum</button>
+          <button className='py-3 px-6 border border-slate-300 hover:bg-gray-50 rounded-md w-fit self-center'>View Full Curriculum</button>
         </section>
         <img className="object-cover" src="/home-isometric.svg" alt="home isometric"/>
       </header>
-      <main>
+      <main className='flex flex-col'>
         {/* How it works section */}
-        <section className='flex flex-col w-1/2 px-8 py-20 mx-auto text-center'>
+        <section className='flex flex-col w-1/2 px-8 py-20 self-center text-center'>
           <h2 className='text-3xl font-medium mb-5 text-gray-800'>How it works</h2>
-          <p className='text-lg text-gray-500 w-3/4 text-center mx-auto mb-10'>This is the website we wish we had when we were learning on our own. We scour the internet looking for only the best resources to supplement your learning and present them in a logical order.</p>
+          <p className='text-lg text-gray-500 mx-auto w-3/4 mb-10'>This is the website we wish we had when we were learning on our own. We scour the internet looking for only the best resources to supplement your learning and present them in a logical order.</p>
           <div className='flex'>
-            <StepCard step={stepArrayObjects[0]}/>
-            <StepCard step={stepArrayObjects[1]}/>
-            <StepCard step={stepArrayObjects[2]}/>
+            {/* mapping through the stepArrayObjects passing object as props and returning them */}
+            {
+              stepArrayObjects.map((object) => {
+                return <StepCard step={object} />;
+              })
+            }
           </div>
         </section>
         {/* learning technologies section */}
-        <section></section>
+        <section className='flex flex-col bg-gray-100 px-20 py-8 text-center'>
+          <h2 className='text-3xl font-medium mb-5 text-gray-800 p-12'>Learn Everything you need to know</h2>
+          <div className='grid grid-cols-3 grid-rows-3 gap-8 self-center mb-8'>
+            {/* mapping through the technologyArrayObjects passing object as props and returning them */}
+            {
+              technologyArrayObjects.map((object) => {
+                return <TechnologyCard technology={object} />;
+              })
+            }
+          </div>
+          <button className='py-3 px-6 my-8 border border-slate-300 rounded-md hover:bg-gray-50 self-center w-fit bg-white'>Explore curriculum</button>
+        </section>
         {/* success stories and support us section */}
-        <section></section>
+        <section className='bg-gray-50 flex flex-col text-center py-20 px-8'>
+          <h2 className='text-3xl font-medium text-gray-800'>Success Stories</h2>
+          <div className='mt-16 mb-16 grid grid-rows-2 grid-cols-2 mx-auto gap-4'>
+            {
+              userArrayObjects.map((object) => {
+                return <UserSuccessStory user = {object} />;
+              })
+            }
+          </div>
+          <p className='underline mb-40 cursor-pointer text-gray-500 font-medium'>Read more success stories</p>
+          <div>
+            <h2 className='text-3xl font-medium  text-gray-800'>Support us!</h2>
+            <p className='text-gray-600 py-6 w-1/4 mx-auto text-sm'>The Odin Project is funded by the community. Join us in empowering learners around the globe by supporting The Odin Project!</p>
+            <div className='flex space-x-4 justify-center'>
+              <button className='py-3 px-6 border border-slate-300 hover:bg-gray-50 rounded-md self-center w-fit bg-white'>Learn more</button>
+              <div className="flex cursor-pointer items-center hover:bg-teal-800 font-medium text-sm bg-teal-700 py-3 px-6 rounded-md text-white">
+                <span>Donate now</span>
+                <svg className="text-white w-6 h-6 relative right-0.5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" ><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer>
+      <footer className='flex justify-center px-12 py-8 mx-2.5'>
+        <div className='border-t-2 border-gray-200'>
+          <p>© 2024 The Odin Project. All rights reserved.</p>
+        </div>
       </footer>
     </div>
   );
