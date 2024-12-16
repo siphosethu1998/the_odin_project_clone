@@ -3,7 +3,7 @@ const Footer = () => {
     return (
         <div>
           <div className="flex mb-24 space-x-20">
-            <div className="flex flex-col space-y-8">
+            <div className="flex flex-col space-y-8 self-start">
                 {/* svg of the odin project logo />*/}
                 <svg class="self-start cursor-pointer hidden lg:block h-12 w-auto text-gray-800 dark:text-gray-300" xmlns="http://www.w3.org/2000/svg" width="205" height="59" viewBox="0 0 205 59" fill="none" role="img" aria-labelledby="aimo4pd0sljq7lim19ykocean6u5hy8c" ><title id="aimo4pd0sljq7lim19ykocean6u5hy8c">Odin Logo</title>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8.68945 34.7331L13.1482 19.2902H30.9833L35.442 34.7331H8.68945Z" fill="#EED9C3"></path>
@@ -66,7 +66,10 @@ const Footer = () => {
                 <a className="hover:text-gray-900" href="#">Privacy</a>
             </div>
           </div>
-          <p className='border-t pt-8 text-xs font-medium text-gray-500'>© 2024 The Odin Project. All rights reserved.</p>
+          <div className="flex border-t w-full pt-8 justify-between">
+            <p className=' text-xs font-medium text-gray-500'>© 2024 The Odin Project. All rights reserved.</p>
+            <a className="underline self-end"  target="_blank" href="https://www.theodinproject.com/">Link to the recreated webpage</a>
+          </div>
         </div>
     );
 }
