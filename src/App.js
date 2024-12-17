@@ -91,7 +91,7 @@ const userArrayObjects = [
 
 function App() {
   return (
-    <div>
+    <div className='flex flex-col items-center'>
       <header className='flex flex-col items-center'>
         {/* Navigation bar section */}
         <NavBar />
@@ -107,8 +107,8 @@ function App() {
         {/* How it works section */}
         <section className='flex flex-col bg-gray-50 px-8 py-20 items-center'>
           <h2 className='text-3xl font-medium mb-5 text-gray-800'>How it works</h2>
-          <p className='text-lg text-gray-500 xl:w-3/5 mb-10'>This is the website we wish we had when we were learning on our own. We scour the internet looking for only the best resources to supplement your learning and present them in a logical order.</p>
-          <div className='flex xl:w-4/5 xl:ml-16'>
+          <p className='text-lg text-gray-500 lg:w-3/4 xl:w-3/5 mb-10'>This is the website we wish we had when we were learning on our own. We scour the internet looking for only the best resources to supplement your learning and present them in a logical order.</p>
+          <div className='flex xl:w-4/5 lg:ml-16 xl:ml-16'>
             {/* mapping through the stepArrayObjects passing object as props and returning them */}
             {
               stepArrayObjects.map((object) => {
@@ -133,19 +133,19 @@ function App() {
         {/* success stories and support us section */}
         <section className='bg-gray-50 flex flex-col w-full items-center py-20 px-8'>
           <h2 className='text-3xl font-medium text-gray-800'>Success Stories</h2>
-          <div className='mt-16 mb-16 grid grid-rows-2 grid-cols-2 gap-4'>
+          <div className='mt-16 mb-16 grid xl:grid-rows-2 xl:grid-cols-2 lg:gap-10 xl:gap-4'>
             {
               userArrayObjects.map((object) => {
                 return <UserSuccessStory user = {object} />;
               })
             }
           </div>
-          <p className='underline mb-40 cursor-pointer text-gray-500 font-medium'>Read more success stories</p>
+          <p className='underline mb-40 cursor-pointer text-gray-500 lg:text-lg font-medium'>Read more success stories</p>
           {/* support us section*/}
           <SupportUs />
         </section>
       </main>
-      <footer className='flex flex-col items-center px-12 py-10 mx-2.5'>
+      <footer className='flex flex-col items-center xl:px-12 xl:py-10 xl:mx-2.5 xl:self-center lg:self-start lg:px-8 lg:py-10'>
         <Footer />
       </footer>
     </div>
