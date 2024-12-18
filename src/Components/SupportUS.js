@@ -2,7 +2,7 @@ const SupportUs = () => {
     return (
         <div className="flex flex-col items-center">
             <h2 className='text-3xl font-medium text-gray-800'>Support us!</h2>
-            <p className='text-gray-400 py-6 lg:w-3/5 text-sm'>The Odin Project is funded by the community. Join us in empowering learners around the globe by supporting The Odin Project!</p>
+            <p className='text-gray-400 py-6 md:w-4/6 lg:w-3/5 text-sm'>The Odin Project is funded by the community. Join us in empowering learners around the globe by supporting The Odin Project!</p>
             <div className='flex space-x-4 justify-center'>
                 <button className='py-3 px-6 border text-gray-700 border-slate-300 hover:bg-gray-50 rounded-md self-center w-fit bg-white'>Learn more</button>
                 <div className="flex cursor-pointer items-center hover:bg-teal-800 font-medium text-sm bg-teal-700 py-3 px-6 rounded-md text-white">
