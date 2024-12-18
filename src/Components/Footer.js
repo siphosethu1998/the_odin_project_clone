@@ -2,8 +2,8 @@
 const Footer = () => {
     return (
         <div>
-            <div className="flex md:flex-col xl:flex-row mb-24 gap-1">
-                <div className="flex flex-col space-y-8 self-start md:mb-16">
+            <div className="flex sm:flex-col xl:flex-row sm:mb-14 md:mb-24 gap-1">
+                <div className="flex flex-col space-y-8 self-start sm:mb-16">
                     {/* svg of the odin project logo />*/}
                     <svg class="self-start cursor-pointer lg:block h-12 w-auto text-gray-800 dark:text-gray-300" xmlns="http://www.w3.org/2000/svg" width="205" height="59" viewBox="0 0 205 59" fill="none" role="img" aria-labelledby="aimo4pd0sljq7lim19ykocean6u5hy8c" ><title id="aimo4pd0sljq7lim19ykocean6u5hy8c">Odin Logo</title>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.68945 34.7331L13.1482 19.2902H30.9833L35.442 34.7331H8.68945Z" fill="#EED9C3"></path>
@@ -43,7 +43,7 @@ const Footer = () => {
                     </div>
                 </div>
                 {/* about, support, Guies and Legal divs */}
-                <div className="grid text-sm md:grid-cols-4 md:gap-16 md:text-nowrap lg:gap-28 xl:gap-24 xl:grid-cols-4">
+                <div className="grid text-sm sm:grid-rows-2 sm:grid-cols-2 md:grid-cols-4 sm:gap-8 md:gap-16 md:text-nowrap lg:gap-28 xl:gap-24 xl:grid-cols-4">
                     <div className="flex flex-col space-y-4 text-gray-600">
                         <p className="text-gray-900 font-medium">About us</p>
                         <a className="hover:text-gray-900" href="#">About</a>
@@ -51,13 +51,18 @@ const Footer = () => {
                         <a className="hover:text-gray-900" href="#">Blog</a>
                         <a className="hover:text-gray-900" href="#">Success Stories</a>
                     </div>
+                    <div className="md:hidden flex flex-col space-y-4 text-gray-600">
+                        <p className="text-gray-900 font-medium">Guides</p>
+                        <a className="hover:text-gray-900" href="#">Community guides</a>
+                        <a className="hover:text-gray-900" href="#">Installation guides</a>
+                    </div>
                     <div className="flex flex-col flex-wrap space-y-4 text-gray-600">
                         <p className="text-gray-900 font-medium">Support</p>
                         <a className="hover:text-gray-900" href="#">FAQ</a>
                         <a className="hover:text-gray-900" href="#">Contribute</a>
                         <a className="hover:text-gray-900" href="#">Contact us</a>
                     </div>
-                    <div className="flex flex-col space-y-4 text-gray-600">
+                    <div className="sm:hidden flex flex-col space-y-4 text-gray-600">
                         <p className="text-gray-900 font-medium">Guides</p>
                         <a className="hover:text-gray-900" href="#">Community guides</a>
                         <a className="hover:text-gray-900" href="#">Installation guides</a>

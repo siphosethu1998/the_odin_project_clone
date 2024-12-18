@@ -93,7 +93,7 @@ const userArrayObjects = [
 function App() {
   return (
     <div>
-      <header className='flex flex-col items-center'>
+      <header className='md:flex md:flex-col md:items-center'>
         {/* Navigation bar section */}
         <NavBar />
         {/* Welcoming section */}
@@ -109,7 +109,7 @@ function App() {
         <section className='flex flex-col bg-gray-50 px-8 py-20 items-center text-center'>
           <h2 className='text-3xl font-medium mb-5 text-gray-800'>How it works</h2>
           <p className='text-lg text-gray-500 mb-10 lg:w-3/4 xl:w-3/5 '>This is the website we wish we had when we were learning on our own. We scour the internet looking for only the best resources to supplement your learning and present them in a logical order.</p>
-          <div className='flex md:w-full lg:ml-16 xl:ml-16 xl:w-4/5 items-center' >
+          <div className='flex sm:flex-col md:w-full lg:ml-16 xl:ml-16 xl:w-4/5 items-center' >
             {/* mapping through the stepArrayObjects passing object as props and returning them */}
             {
               stepArrayObjects.map((object) => {
@@ -120,8 +120,8 @@ function App() {
         </section>
         {/* learning technologies section */}
         <section className='flex flex-col bg-gray-100 w-full px-20 py-8 items-center font-medium'>
-          <h2 className='text-3xl mb-5 text-gray-800 p-12'>Learn Everything you need to know</h2>
-          <div className='grid md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3 gap-8 mb-8 md:last:self-center'>
+          <h2 className='text-3xl mb-5 text-gray-800 p-12 sm:text-nowrap'>Learn Everything you need to know</h2>
+          <div className='grid sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3 gap-8 mb-8 md:last:self-center'>
             {/* mapping through the technologyArrayObjects passing object as props and returning them */}
             {
               technologyArrayObjects.map((object) => {
@@ -134,7 +134,7 @@ function App() {
         {/* success stories and support us section */}
         <section className='bg-gray-50 flex flex-col items-center py-20 px-8'>
           <h2 className='text-3xl font-medium text-gray-800'>Success Stories</h2>
-          <div className='mt-16 mb-16 grid items-center md:gap-10 xl:grid-rows-2 xl:grid-cols-2 xl:gap-4 md:w-4/6 lg:w-3/6'>
+          <div className='mt-16 mb-16 grid items-center sm:gap-10 sm:w-5/6 md:gap-10 md:w-4/6 xl:grid-rows-2 xl:grid-cols-2 xl:gap-4 lg:w-3/6'>
             {
               userArrayObjects.map((object) => {
                 return <UserSuccessStory user = {object} />;
@@ -146,7 +146,7 @@ function App() {
           <SupportUs />
         </section>
       </main>
-      <footer className='flex flex-col xl:items-center xl:px-12 xl:py-10 xl:mx-2.5 xl:self-center md:px-8 md:py-10'>
+      <footer className='flex flex-col xl:items-center xl:px-12 xl:py-10 xl:mx-2.5 xl:self-center sm:px-8 sm:py-10'>
         <Footer />
       </footer>
     </div>
