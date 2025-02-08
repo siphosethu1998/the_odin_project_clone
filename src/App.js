@@ -9,16 +9,19 @@ import SupportUs from './Components/SupportUS';
 // array to store step objects
 const stepArrayObjects = [
   {
+    id : 1,
     image: "https://www.theodinproject.com/assets/img-learn-0a725ad1.svg",
     title: "Learn",
     description: "Learn from a curriculum with the best curated online tutorials, blogs, and courses."
   },
   {
+    id : 2,
     image: "https://www.theodinproject.com/assets/img-build-a02a424b.svg",
     title: "Build",
     description: "Build dozens of portfolio-worthy projects along the way, from simple scripts to full programs and deployed websites."
   },
   {
+    id : 3,
     image: "https://www.theodinproject.com/assets/img-connect-866e9700.svg",
     title: "Connect",
     description: "You're not alone. Learn and get help from our friendly community of beginner and experienced developers."
@@ -28,38 +31,47 @@ const stepArrayObjects = [
 // array to store technology objects
 const technologyArrayObjects = [
   {
+    id : 1,
     image: "https://www.theodinproject.com/assets/badge-html-css-4d74ba92.svg",
     title: "Intermediate HTML and CSS",
   },
   {
+    id : 2,
     image: "https://www.theodinproject.com/assets/badge-html-css-4d74ba92.svg",
     title: "Advanced HTML and CSS",
   },
   {
+    id : 3,
     image: "https://www.theodinproject.com/assets/badge-database-3757c431.svg",
     title: "Databases",
   },
   {
+    id : 4,
     image: "https://www.theodinproject.com/assets/badge-javascript-43bfdf7b.svg",
     title: "JavaScript",
   },
   {
+    id : 5,
     image: "https://www.theodinproject.com/assets/badge-react-21ede6f9.svg",
     title: "React",
   },
   {
+    id : 6,
     image: "https://www.theodinproject.com/assets/badge-nodejs-b8154f54.svg",
     title: "NodeJS",
   },
   {
+    id : 7,
     image: "https://www.theodinproject.com/assets/badge-ruby-on-rails-e5f98949.svg",
     title: "Ruby on Rails",
   },
   {
+    id : 8,
     image: "https://www.theodinproject.com/assets/badge-ruby-2e00add1.svg",
     title: "Ruby",
   },
   {
+    id : 9,
     image: "https://www.theodinproject.com/assets/badge-getting-hired-87e39081.svg",
     title: "Get Hired",
   }
@@ -68,22 +80,26 @@ const technologyArrayObjects = [
 // array to store user success story objects
 const userArrayObjects = [
   {
+    id : 1,
     image: "https://www.theodinproject.com/assets/success_stories/rob_pando-2afd55e8.jpg",
     name: "Rob Pando",
     paragraph: "TOP was a perfect match for my learning style. Not walking me through an entire project but actually forcing me to figure it out on my own, by pointing me..."
   },
   {
+    id : 2,
     image: "https://www.theodinproject.com/assets/success_stories/cody_loyd-fb0721ea.jpg",
     name: "Cody Loyd",
     paragraph: "Before I started the Odin Project I had literally ZERO programming experience. After almost exactly a year of working through the program, I was offered a job as a front..."
   },
   {
+    id : 3,
     image: "https://www.theodinproject.com/assets/success_stories/andrej_dragojevic-a1bd5d98.jpg",
     name: "Andrej Dragojevic",
     paragraph: "An incredible self-paced curriculum that consists of the best resources for learning programming on the web! It was an invaluable resource on my path to a becoming a software developer...."
 
   },
   {
+    id : 4,
     image: "https://www.theodinproject.com/assets/success_stories/skip-7f368b69.jpg",
     name: "Skip Gibson",
     paragraph: "Before I found The Odin Project I had very little direction with my learning, jumping from topic to topic then trying to piece things together as I went. Having this..."
@@ -106,10 +122,10 @@ function App() {
       </header>
       <main className='flex flex-col items-center text-center'>
         {/* How it works section */}
-        <section className='flex flex-col bg-gray-50 px-8 py-20 items-center text-center'>
+        <section className='flex flex-col bg-gray-50 px-8 py-20 w-full items-center text-center'>
           <h2 className='text-3xl font-medium mb-5 text-gray-800'>How it works</h2>
-          <p className='text-lg text-gray-500 mb-10 lg:w-3/4 xl:w-3/5 '>This is the website we wish we had when we were learning on our own. We scour the internet looking for only the best resources to supplement your learning and present them in a logical order.</p>
-          <div className='flex sm:flex-col md:w-full lg:ml-16 xl:ml-16 xl:w-4/5 items-center' >
+          <p className='text-lg text-gray-500 mb-10 lg:w-3/4 xl:w-3/6 '>This is the website we wish we had when we were learning on our own. We scour the internet looking for only the best resources to supplement your learning and present them in a logical order.</p>
+          <div className='flex sm:flex-col md:flex-row lg:ml-16 xl:w-3/6 items-center' >
             {/* mapping through the stepArrayObjects passing object as props and returning them */}
             {
               stepArrayObjects.map((object) => {

@@ -1,5 +1,5 @@
 # The Odin project clone
-- This is the landing page of the odin project that i cloned
+- This is a clone website of theodinproject website
 
 # Tech stack
 - React

@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
         <div>
-            <div className="flex sm:flex-col xl:flex-row sm:mb-14 md:mb-24 gap-1">
+            <div className="flex sm:flex-col sm:mb-14 md:mb-1 xl:flex-row gap-1">
                 <div className="flex flex-col space-y-8 self-start sm:mb-16">
                     {/* svg of the odin project logo />*/}
                     <svg class="self-start cursor-pointer lg:block h-12 w-auto text-gray-800 dark:text-gray-300" xmlns="http://www.w3.org/2000/svg" width="205" height="59" viewBox="0 0 205 59" fill="none" role="img" aria-labelledby="aimo4pd0sljq7lim19ykocean6u5hy8c" ><title id="aimo4pd0sljq7lim19ykocean6u5hy8c">Odin Logo</title>
