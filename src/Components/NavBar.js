@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 // shared tailwindcss styles for all the navigation items except for the get started button and svg icons
 const navItemStyling = "relative after:content-[''] hover:after:scale-100 hover:after:bg-gray-300 after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 pt-2 px-1 pb-2";
 
@@ -6,7 +8,10 @@ const NavBar = () => {
         <div>
             <nav className="md:flex md:items-center md:justify-center py-2 mb-4 cursor-pointer text-gray-500 hover:text-gray-700 font-medium md:px-8 md:text-sm lg:px-2 lg:space-x-24 md:text-wrap lg:text-nowrap lg:text-base xl:px-8 xl:space-x-96 xl:text-sm">
                 {/* svg of the odin project logo */}
-                <div className="sm:flex sm:justify-between sm:px-4 sm:mb-4 md:flex md:items-center">
+                <Link 
+                  to="/"
+                  className="sm:flex sm:justify-between sm:px-4 sm:mb-4 md:flex md:items-center"
+                  >
                     <img className="h-12 w-auto lg:h-0 lg:w-0 lg:hidden" src="https://www.theodinproject.com/assets/icons/odin-icon-22b41941.svg" alt="Odin logo"/>
                     <svg className="h-12 sm:hidden lg:block lg:w-auto text-gray-800 dark:text-gray-300" xmlns="http://www.w3.org/2000/svg" width="205" height="59" viewBox="0 0 205 59" fill="none" role="img" aria-labelledby="aimo4pd0sljq7lim19ykocean6u5hy8c" ><title id="aimo4pd0sljq7lim19ykocean6u5hy8c">Odin Logo</title>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.68945 34.7331L13.1482 19.2902H30.9833L35.442 34.7331H8.68945Z" fill="#EED9C3"></path>
@@ -29,8 +34,14 @@ const NavBar = () => {
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
                         </svg>
                     </button>
-                </div>
+                </Link>
                 <ul className="sm:hidden md:flex md:items-center xl:whitespace-nowrap lg:ml-6 ">
+                    <Link 
+                      to="/allpaths"
+                      className={`${navItemStyling} ml-8`}
+                    >
+                      All Paths
+                    </Link>
                     <li className={`${navItemStyling} ml-8`}>All Paths</li>
                     <li className={`${navItemStyling} ml-8`}>About</li>
                     <li className={`${navItemStyling} ml-8`}>Community</li>
