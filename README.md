@@ -4,7 +4,8 @@
 # Tech stack
 - React
 - Tailwindcss
-
+- TypeScript
+- React Router Dom
 
 # Getting Started with Create React App
 
