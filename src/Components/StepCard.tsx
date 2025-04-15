@@ -1,5 +1,5 @@
 
-const StepCard = (props) => {
+const StepCard = (props: any) => {
     return (
         <div className="flex flex-col items-center gap-5 text-center py-6 text-gray-700">
             <img className="sm:h-32 md:h-40" src={props.step.image} alt="step icon"/>

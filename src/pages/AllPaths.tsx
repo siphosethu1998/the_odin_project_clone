@@ -16,10 +16,10 @@ const AllPaths = () => {
         </div>
         <p className="text-gray-500 p-4">This is where it all begins! A hands-on introduction to all of the essential tools you'll need to build real, working websites. You'll learn what web developers actually do and the foundations you'll need for later courses.</p>
       </div>
-      <div className="flex">
-        <span className="border border-l border-gray-500"></span>
+      <div className="relative flex gap-3 items-center">
+        <span className="h-0.5 w-56 bg-gray-300"></span>
         <h2 className="text-gray-800 text-2xl font-medium">Then choose a learning path:</h2>
-        <span className="border border-l border-gray-500"></span>
+        <span className="h-0.5 w-56 bg-gray-300"></span>
       </div>
     </div>
   );

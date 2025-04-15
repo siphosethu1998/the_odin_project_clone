@@ -3,7 +3,7 @@ import TechnologyCard from '../Components/TechnologyCard';
 import UserSuccessStory from '../Components/UserSuccessStory';
 import Footer from '../Components/Footer';
 import SupportUs from '../Components/SupportUS';
-import { stepArrayObjects, technologyArrayObjects, userArrayObjects } from "../Data.js";
+import { stepArrayObjects, technologyArrayObjects, userArrayObjects } from "../Data";
 
 function LandingPage() {
   return (
