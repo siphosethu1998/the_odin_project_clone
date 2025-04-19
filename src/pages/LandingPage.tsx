@@ -25,8 +25,8 @@ function LandingPage() {
           <div className='flex sm:flex-col md:flex-row lg:ml-16 xl:w-3/6 items-center' >
             {/* mapping through the stepArrayObjects passing object as props and returning them */}
             {
-              stepArrayObjects.map((object) => {
-                return <StepCard step={object} />;
+              stepArrayObjects.map((step) => {
+                return <StepCard image={step.image} title={step.title} description={step.description} />;
               })
             }
           </div>
@@ -37,8 +37,8 @@ function LandingPage() {
           <div className='grid sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3 gap-4 md:last:self-center'>
             {/* mapping through the technologyArrayObjects passing object as props and returning them */}
             {
-              technologyArrayObjects.map((object) => {
-                return <TechnologyCard technology={object} />;
+              technologyArrayObjects.map((technology) => {
+                return <TechnologyCard title={technology.title} image={technology.image} />;
               })
             }
           </div>
@@ -49,8 +49,8 @@ function LandingPage() {
           <h2 className='text-3xl font-medium text-gray-800'>Success Stories</h2>
           <div className='mt-16 mb-16 grid items-center sm:gap-10 sm:w-5/6 md:gap-10 md:w-4/6 xl:grid-rows-2 xl:grid-cols-2 xl:gap-4 lg:w-3/6'>
             {
-              userArrayObjects.map((object) => {
-                return <UserSuccessStory user = {object} />;
+              userArrayObjects.map((user) => {
+                return <UserSuccessStory image={user.image} name={user.name} testimonial={user.testimonial} />;
               })
             }
           </div>

@@ -1,11 +1,4 @@
-export type StepProps = {
-  id: number;
-  image: string;
-  title: string;
-  description: string;
-}
-
-export type TechnologyProps = Omit<StepProps, "description">;
+//export type TechnologyProps = Omit<StepProps, "description">;
 
 export type UserProps = {
   id: number;
@@ -15,7 +8,7 @@ export type UserProps = {
 }
 
 // array to store step objects
-export const stepArrayObjects: StepProps[] = [
+export const stepArrayObjects = [
   {
     id : 1,
     image: "https://www.theodinproject.com/assets/img-learn-0a725ad1.svg",
@@ -37,7 +30,7 @@ export const stepArrayObjects: StepProps[] = [
 ];
 
 // array to store technology objects
-export const technologyArrayObjects: TechnologyProps[] = [
+export const technologyArrayObjects = [
   {
     id : 1,
     image: "https://www.theodinproject.com/assets/badge-html-css-4d74ba92.svg",
@@ -86,7 +79,7 @@ export const technologyArrayObjects: TechnologyProps[] = [
 ];
 
 // array to store user success story objects
-export const userArrayObjects: UserProps[] = [
+export const userArrayObjects = [
   {
     id : 1,
     image: "https://www.theodinproject.com/assets/success_stories/rob_pando-2afd55e8.jpg",
