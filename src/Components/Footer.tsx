@@ -1,7 +1,6 @@
-
 const Footer = () => {
     return (
-        <div>
+        <div className="flex flex-col xl:items-center xl:px-12 xl:py-10 xl:mx-2.5 xl:self-center sm:px-8 sm:py-10">
             <div className="flex sm:flex-col sm:mb-14 md:mb-1 xl:flex-row gap-1">
                 <div className="flex flex-col space-y-8 self-start sm:mb-16">
                     {/* svg of the odin project logo />*/}

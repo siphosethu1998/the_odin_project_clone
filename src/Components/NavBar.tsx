@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 // shared tailwindcss styles for all the navigation items except for the get started button and svg icons
-const navItemStyling = "relative after:content-[''] hover:after:scale-100 hover:after:bg-gray-300 after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 py-2 px-1 font-helvetica text-gray-500 hover:text-gray-700 ";
+const navItemStyling = "relative after:content-[''] hover:after:scale-100 hover:after:bg-gray-300 after:absolute after:w-full after:h-0.5 after:bottom-0 after:left-0 py-1 px-1 font-helvetica text-gray-500 hover:text-gray-700 ";
 
 const NavBar = () => {
     return (
@@ -51,7 +51,7 @@ const NavBar = () => {
                 <li className={`${navItemStyling} ml-8`}>Support us</li>
                 <li className={`${navItemStyling} ml-8`}>Sign in</li>
                 <li className="px-3 py-2">
-                    {/* svg image of light and dark mode icon  */}
+                    {/* svg image of light mode icon  */}
                     <svg className="ml-4 w-6 h-6 h-5 w-5 text-gray-400 hover:text-gray-700 dark:text-gray-300 dark:group-hover:text-gray-300 group-hover:text-gray-700" xmlns="http://www.w3.org/2000/svg"  fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  role="img" aria-labelledby="atgc20zy8r5lhob3jd0ef2y9g9zptgd5"><title id="atgc20zy8r5lhob3jd0ef2y9g9zptgd5">theme icon</title>
                         <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"></path>
                     </svg>

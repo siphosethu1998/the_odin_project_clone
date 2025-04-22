@@ -1,7 +1,6 @@
 import StepCard from '../Components/StepCard';
 import TechnologyCard from '../Components/TechnologyCard';
 import UserSuccessStory from '../Components/UserSuccessStory';
-import Footer from '../Components/Footer';
 import SupportUs from '../Components/SupportUS';
 import { stepArrayObjects, technologyArrayObjects, userArrayObjects } from "../Data";
 
@@ -45,7 +44,7 @@ function LandingPage() {
           <button className='py-3 px-6 my-8 border text-gray-700 border-slate-300 rounded-md hover:bg-gray-50 w-fit bg-white'>Explore curriculum</button>
         </section>
         {/* success stories and support us section */}
-        <section className='bg-gray-50 flex flex-col items-center py-20 px-8'>
+        <section className='w-full bg-gradient-to-b from-white to-gray-100 flex flex-col items-center pt-20 px-8'>
           <h2 className='text-3xl font-medium text-gray-800'>Success Stories</h2>
           <div className='mt-16 mb-16 grid items-center sm:gap-10 sm:w-5/6 md:gap-10 md:w-4/6 xl:grid-rows-2 xl:grid-cols-2 xl:gap-4 lg:w-3/6'>
             {
@@ -54,14 +53,11 @@ function LandingPage() {
               })
             }
           </div>
-          <p className='underline mb-40 cursor-pointer text-gray-500 md:text-lg font-medium'>Read more success stories</p>
+          <p className='underline mb-20 cursor-pointer text-gray-500 md:text-lg font-medium'>Read more success stories</p>
           {/* support us section */}
-          <SupportUs />
         </section>
+        <SupportUs />
       </main>
-      <footer className='flex flex-col xl:items-center xl:px-12 xl:py-10 xl:mx-2.5 xl:self-center sm:px-8 sm:py-10'>
-        <Footer />
-      </footer>
     </div>
   );
 }
