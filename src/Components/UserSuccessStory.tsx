@@ -1,4 +1,5 @@
 export type UserProps = {
+  id?: number;
   image: string;
   name: string;
   testimonial: string;
@@ -6,7 +7,7 @@ export type UserProps = {
 
 const UserSuccessStory = ({ image, name, testimonial }: UserProps) => {
   return (
-    <div className="flex space-x-6">
+    <div className="flex space-x-6 xxs:w-11/12">
       <img className="w-12 h-12 rounded-full shadow-inner mt-4" src={ image } alt="User success profile"/>
       <div className="flex flex-col">
           <p className="underline hover:no-underline cursor-pointer self-start text-gray-900">{ name }</p>

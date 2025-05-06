@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         helvetica: ["Helvetica Neue", "Helvetica"],
       },
+      screens: {
+        "xxs": "340px",
+      }
     },
   },
   plugins: [],

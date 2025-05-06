@@ -1,8 +1,8 @@
 const Footer = () => {
     return (
-        <div className="flex flex-col xl:items-center xl:px-12 xl:py-10 xl:mx-2.5 xl:self-center sm:px-8 sm:py-10">
-            <div className="flex sm:flex-col sm:mb-14 md:mb-1 xl:flex-row gap-1">
-                <div className="flex flex-col space-y-8 self-start sm:mb-16">
+        <div className="flex flex-col xl:items-center xl:px-12 xl:py-10 xl:mx-2.5 xl:self-center xxs:px-8 xxs:py-10">
+            <div className="flex xxs:flex-col xxs:mb-14 md:mb-1 xl:flex-row gap-1">
+                <div className="flex flex-col space-y-8 self-start xxs:mb-16">
                     {/* svg of the odin project logo />*/}
                     <svg className="self-start cursor-pointer lg:block h-12 w-auto text-gray-800 dark:text-gray-300" xmlns="http://www.w3.org/2000/svg" width="205" height="59" viewBox="0 0 205 59" fill="none" role="img" aria-labelledby="aimo4pd0sljq7lim19ykocean6u5hy8c" ><title id="aimo4pd0sljq7lim19ykocean6u5hy8c">Odin Logo</title>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8.68945 34.7331L13.1482 19.2902H30.9833L35.442 34.7331H8.68945Z" fill="#EED9C3"></path>
@@ -42,7 +42,7 @@ const Footer = () => {
                     </div>
                 </div>
                 {/* about, support, Guies and Legal divs */}
-                <div className="grid text-sm sm:grid-rows-2 sm:grid-cols-2 md:grid-cols-4 sm:gap-8 md:gap-16 md:text-nowrap lg:gap-28 xl:gap-24 xl:grid-cols-4">
+                <div className="grid text-sm xxs:grid-rows-2 xxs:grid-cols-2 md:grid-cols-4 xxs:gap-8 md:gap-16 md:text-nowrap lg:gap-28 xl:gap-24 xl:grid-cols-4">
                     <div className="flex flex-col space-y-4 text-gray-600">
                         <p className="text-gray-900 font-medium">About us</p>
                         <a className="hover:text-gray-900" href="#">About</a>
@@ -61,7 +61,7 @@ const Footer = () => {
                         <a className="hover:text-gray-900" href="#">Contribute</a>
                         <a className="hover:text-gray-900" href="#">Contact us</a>
                     </div>
-                    <div className="sm:hidden flex flex-col space-y-4 text-gray-600">
+                    <div className="xxs:hidden flex flex-col space-y-4 text-gray-600">
                         <p className="text-gray-900 font-medium">Guides</p>
                         <a className="hover:text-gray-900" href="#">Community guides</a>
                         <a className="hover:text-gray-900" href="#">Installation guides</a>
@@ -73,9 +73,9 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex border-t w-full pt-8 justify-between">
-                <p className=' text-xs font-medium text-gray-500'>© 2024 The Odin Project. All rights reserved.</p>
-                <a className="underline self-end"  target="_blank" rel="noreferrer" href="https://www.theodinproject.com/">Link to the recreated webpage</a>
+            <div className="flex xxs:flex-col xxs:gap-2 sm:gap-0 sm:flex-row border-t w-full pt-8 justify-between">
+                <p className='text-xs font-medium text-gray-500'>© 2024 The Odin Project. All rights reserved.</p>
+                <a className="underline xxs:self-start sm:self-end"  target="_blank" rel="noreferrer" href="https://www.theodinproject.com/">Link to the recreated webpage</a>
             </div>
         </div>
     );

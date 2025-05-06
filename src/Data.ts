@@ -1,12 +1,3 @@
-//export type TechnologyProps = Omit<StepProps, "description">;
-
-export type UserProps = {
-  id: number;
-  image: string;
-  name: string;
-  testimonial: string;
-}
-
 // array to store step objects
 export const stepArrayObjects = [
   {
