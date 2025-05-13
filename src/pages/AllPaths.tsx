@@ -5,11 +5,11 @@ const AllPaths = () => {
   return (
     <div className="flex flex-col font-helvetica">
       <div className="bg-gray-50 flex flex-col items-center py-10 border-t border-gray-200 gap-10">
-        <h1 className="text-gray-800 text-3xl font-bold font-helvetica">All Paths</h1>
+        <h1 className="text-gray-800 text-3xl font-bold font-helvetica pt-6">All Paths</h1>
         {/* foundation card */}
         <div className="bg-white xxs:px-8 md:px-0 pb-8 pt-10 gap-8 flex-1 rounded-lg shadow-sm flex flex-col items-center flex-wrap xxs:w-11/12 md:divide-y md:w-[880px]">
-          <div className="flex pb-4 xxs:justify-center xxs:w-11/12 md:w-full md:items-center md:justify-between self-start">
-            <div className="flex xxs:flex-col md:flex-row items-center gap-8">
+          <div className="flex pb-4 xxs:justify-center xxs:w-11/12 xs:w-full xs:items-center md:justify-between self-start">
+            <div className="flex xxs:flex-col xxs:items-center sm:flex-row sm:self-start sm:w-full gap-8">
               <Link 
                 to=""
                 className="size-24"
@@ -23,7 +23,7 @@ const AllPaths = () => {
             </div>
             <Link
               to=""
-              className="bg-gray-700 hover:bg-gray-800 text-white xxs:hidden md:block px-12 py-3 rounded-md h-fit"
+              className="bg-gray-700 hover:bg-gray-800 text-white xxs:hidden md:block md:px-12 py-3 rounded-md h-fit"
             >
               Explore
             </Link>
@@ -31,7 +31,7 @@ const AllPaths = () => {
           <p className="text-gray-500 leading-loose md:pt-4 md:pl-2 md:pr-24">This is where it all begins! A hands-on introduction to all of the essential tools you'll need to build real, working websites. You'll learn what web developers actually do and the foundations you'll need for later courses.</p>
           <Link
             to=""
-            className="bg-gray-700 hover:bg-gray-800 text-white xxs:text-sm xxs:block md:hidden w-fit xxs:px-10 md:px-12 py-3 rounded-md h-fit"
+            className="bg-gray-700 hover:bg-gray-800 text-white xxs:text-sm xxs:block sm:self-start md:hidden w-fit xxs:px-10 py-3 rounded-md h-fit"
           >
             Explore
           </Link>
@@ -60,7 +60,7 @@ const AllPaths = () => {
             <h3 className="text-gray-800 text-xl font-medium self-start">Full Stack Ruby on Rails</h3>
             <p className="leading-loose">This path takes you through our entire Ruby on Rails curriculum. The courses should be taken in the order that they are displayed. You'll learn everything you need to know to create beautiful responsive websites from scratch using Ruby on Rails.</p>
             <button
-              className="bg-gray-700 hover:bg-gray-800 text-white xxs:text-sm xxs:self-center xxs:px-10 md:self-start md:px-12 py-3 rounded-md h-fit"
+              className="bg-gray-700 hover:bg-gray-800 text-white xxs:text-sm xxs:self-center xxs:px-10 sm:self-start md:px-12 py-3 rounded-md h-fit"
             >
               Explore
             </button>
@@ -82,7 +82,7 @@ const AllPaths = () => {
             <h3 className="text-gray-800 text-xl font-medium self-start">Full Stack JavaScript</h3>
             <p className="leading-loose">This path takes you through our entire JavaScript curriculum. The courses should be taken in the order that they are displayed. You'll learn everything you need to know to create beautiful responsive websites from scratch using JavaScript and NodeJS.</p>
             <button
-              className="bg-gray-700 hover:bg-gray-800 text-white xxs:text-sm xxs:self-center md:self-start xxs:px-10 md:px-12 py-3 rounded-md h-fit"
+              className="bg-gray-700 hover:bg-gray-800 text-white xxs:text-sm xxs:self-center sm:self-start xxs:px-10 md:px-12 py-3 rounded-md h-fit"
             >
               Explore
             </button>
