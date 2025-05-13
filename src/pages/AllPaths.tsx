@@ -7,9 +7,9 @@ const AllPaths = () => {
       <div className="bg-gray-50 flex flex-col items-center py-10 border-t border-gray-200 gap-10">
         <h1 className="text-gray-800 text-3xl font-bold font-helvetica">All Paths</h1>
         {/* foundation card */}
-        <div className="bg-white px-8 pb-8 pt-10 gap-8 flex-1 rounded-lg shadow-sm flex flex-col items-center flex-wrap xxs:w-11/12 md:divide-y md:w-[880px]">
+        <div className="bg-white xxs:px-8 md:px-0 pb-8 pt-10 gap-8 flex-1 rounded-lg shadow-sm flex flex-col items-center flex-wrap xxs:w-11/12 md:divide-y md:w-[880px]">
           <div className="flex pb-4 xxs:justify-center xxs:w-11/12 md:w-full md:items-center md:justify-between self-start">
-            <div className="flex xxs:flex-col items-center gap-8">
+            <div className="flex xxs:flex-col md:flex-row items-center gap-8">
               <Link 
                 to=""
                 className="size-24"
@@ -28,7 +28,7 @@ const AllPaths = () => {
               Explore
             </Link>
           </div>
-          <p className="text-gray-500 leading-loose md:pl-8 md:pr-24">This is where it all begins! A hands-on introduction to all of the essential tools you'll need to build real, working websites. You'll learn what web developers actually do and the foundations you'll need for later courses.</p>
+          <p className="text-gray-500 leading-loose md:pt-4 md:pl-2 md:pr-24">This is where it all begins! A hands-on introduction to all of the essential tools you'll need to build real, working websites. You'll learn what web developers actually do and the foundations you'll need for later courses.</p>
           <Link
             to=""
             className="bg-gray-700 hover:bg-gray-800 text-white xxs:text-sm xxs:block md:hidden w-fit xxs:px-10 md:px-12 py-3 rounded-md h-fit"
@@ -38,9 +38,9 @@ const AllPaths = () => {
         </div>
         {/* Choosing learning paths section */}
         <div className="flex gap-5 items-center xxs:w-11/12 md:w-[880px]">
-          <span className="xxs:hidden sm:block border-t border-gray-300 w-full"></span>
-          <h2 className="text-gray-800 text-2xl font-medium mx-auto xxs:w-11/12 sm:w-full sm:text-nowrap">Then choose a learning path:</h2>
-          <span className="xxs:hidden sm:block border-t border-gray-300 w-full"></span>
+          <span className="xxs:hidden xs:block border-t border-gray-300 w-full"></span>
+          <h2 className="text-gray-800 text-2xl font-medium mx-auto xxs:w-11/12 xs:w-full xs:text-nowrap">Then choose a learning path:</h2>
+          <span className="xxs:hidden xs:block border-t border-gray-300 w-full"></span>
         </div>
         <div className="flex xxs:flex-col xxs:gap-6 xxs:w-full xxs:items-center md:flex-row md:justify-between md:w-[880px]">
           <div className="bg-white text-gray-500 px-8 pt-10 pb-8 rounded-lg shadow-md flex flex-col items-center gap-6 xxs:w-11/12 md:w-[405px]">
